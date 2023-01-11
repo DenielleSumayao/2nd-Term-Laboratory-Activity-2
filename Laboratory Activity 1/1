@@ -1,5 +1,5 @@
 // 1. Write a Java program that will read the input file (data.txt) and add all the data in the text.
-    //The program will also create a file (sum.txt) and write the sum in the file created.
+    // The program will also create a file (sum.txt) and write the sum in the file created.
 
 import java.io.*;
 import java.util.Scanner;
