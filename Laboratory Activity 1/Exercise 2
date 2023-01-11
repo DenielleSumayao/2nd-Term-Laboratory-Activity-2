@@ -2,7 +2,7 @@
 
 import java.io.*;
 
-public class Exp2 {
+public class Act2 {
     public static void main(String[] args) throws IOException, FileNotFoundException {
         // Declaration for file
         File inFile = new File("dummy.txt");
