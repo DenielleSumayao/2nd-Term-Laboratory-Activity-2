@@ -5,7 +5,7 @@ import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Exp1 {
+public class Act1 {
     public static void main(String[] args) throws FileNotFoundException, IOException  {
         
         // Input File - data.txt file
