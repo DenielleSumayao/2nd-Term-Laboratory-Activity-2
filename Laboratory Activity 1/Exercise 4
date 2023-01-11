@@ -4,7 +4,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Exp4 {
+public class Act4 {
 
 	public static void main(String[] args) throws IOException, FileNotFoundException {
 		Scanner in = new Scanner(System.in);
