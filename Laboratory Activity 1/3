@@ -11,7 +11,7 @@ public class Exp3 {
         
         // ArrayList<String> listS = new ArrayList<String>();
 
-        int ln = 5; // lines you wanted to read
+        int ln = 5; // to determine number of lines to read
         int loop = 1;
 
         String data = "";
