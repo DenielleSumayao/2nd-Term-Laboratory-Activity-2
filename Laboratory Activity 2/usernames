@@ -1,14 +1,12 @@
 //importing library
 import java.io.*;
-
 public class Usernames {
     public static void main(String[] args) throws IOException{
         System.out.println("> ---------- <"); username();
         System.out.println("> ---------- <"); email();
         System.out.println("> ---------- <"); findPanda();
         System.out.println("> ---------- <");  
-    }
-    
+    }    
     public static void usernames()throws IOException, FileNotFoundException{
 //checking the validity of the username
         File file = new File("C:\Users\Admin\Documents\Luke\Programming\Term 2\username.txt");
@@ -27,7 +25,6 @@ public class Usernames {
             }
         } 
     }
-    
     public static void email()throws IOException, FileNotFoundException{
  //checking the validity of email
         File file = new File("C:\Users\Admin\Documents\Luke\Programming\Term 2\username.txt");
@@ -45,8 +42,7 @@ public class Usernames {
                 System.out.println("Unfortunately, the inputted email is invalid.");
             }
         } 
-    }
-    
+    }   
     public static void findPanda()throws IOException, FileNotFoundException{
 //ensuring 'panda' can be found on the string
         File file = new File("C:\Users\Admin\Documents\Luke\Programming\Term 2\panda.txt");
