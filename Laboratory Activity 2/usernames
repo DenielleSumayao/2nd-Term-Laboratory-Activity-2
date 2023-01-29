@@ -1,0 +1,67 @@
+//importing library
+import java.io.*;
+
+public class Usernames {
+    public static void main(String[] args) throws IOException{
+        System.out.println("> ---------- <"); username();
+        System.out.println("> ---------- <"); email();
+        System.out.println("> ---------- <"); findPanda();
+        System.out.println("> ---------- <");  
+    }
+    
+    public static void usernames()throws IOException, FileNotFoundException{
+//checking the validity of the username
+        File file = new File("C:\Users\Admin\Documents\Luke\Programming\Term 2\username.txt");
+        BufferedReader br = new BufferedReader (new FileReader(file));
+//typing regex codes needed
+        String pattern = "(^[a-z])([a-z0-9-_]*){8,25}";
+        String text;
+//displaying results
+        while((text = br.readLine()) != null){
+            System.out.println("Username: " + text);
+            if(text.matches(pattern)){
+                System.out.println("The username is valid!");
+            }
+            else{
+                System.out.println("The username is invalid!");
+            }
+        } 
+    }
+    
+    public static void email()throws IOException, FileNotFoundException{
+ //checking the validity of email
+        File file = new File("C:\Users\Admin\Documents\Luke\Programming\Term 2\username.txt");
+        BufferedReader br = new BufferedReader (new FileReader(file));
+ //typing necessary regex codes here
+        String pattern = "(^[\\w-_]{7,})@([\\w-_]+)\\.([\\w-_]{2,})$";
+        String text;
+ //displaying results 
+        while((text = br.readLine()) != null){
+            System.out.println("Email: " + text);
+            if(text.matches(pattern)){
+                System.out.println("The inputted email is valid.");
+            }
+            else{
+                System.out.println("Unfortunately, the inputted email is invalid.");
+            }
+        } 
+    }
+    
+    public static void findPanda()throws IOException, FileNotFoundException{
+//ensuring 'panda' can be found on the string
+        File file = new File("C:\Users\Admin\Documents\Luke\Programming\Term 2\panda.txt");
+        BufferedReader br = new BufferedReader (new FileReader(file));
+        String pattern = ".*panda*."; //insert regex here
+        String text;
+//displaying results
+        while((text = br.readLine()) != null){
+            System.out.println("Text: " + text);
+            if(text.matches(pattern)){
+                System.out.println("the word panda is found.");
+            }
+            else{
+                System.out.println("unfortunately, the word panda is not found.");
+            }
+        } 
+    }
+}
