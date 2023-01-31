@@ -1,3 +1,4 @@
+// Group 5 Members: Aseron, Cadiz, Marfal, Sumayao, Villena
 // Goal: To create a simple class and displaying its attributes.
 // Will be going for the method of using a constructor. 
 
