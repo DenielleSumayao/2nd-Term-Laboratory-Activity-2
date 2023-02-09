@@ -1,3 +1,5 @@
+package House;
+
 public class House {
     double lot_area;
     double floor_area;
